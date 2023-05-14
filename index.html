@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Graph Visualizer</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <h1>Graph Visualizer</h1>
+    <div class="control-panel">
+      <div id="filter-container" class="control-item">
+        <label for="filter">Filter:</label>
+        <select id="filter">
+          <option value="">All</option>
+          <option value="meal">Meal</option>
+          <option value="user">User</option>
+          <option value="ingredient">Ingredient</option>
+          <option value="allergen">Allergen</option>
+          <option value="category">Category</option>
+          <option value="nutrient">Nutrient</option>
+        </select>
+      </div>
+      <div id="search-container" class="control-item">
+        <label for="search">Search:</label>
+        <input type="text" id="search" name="search" required>
+        <button id="search-btn">Search</button>
+      </div>
+    </div>
+    <div id="graph-container"></div>
+    <div class="control-panel">
+      <div id="node-control" class="control-item">
+        <h2>Node Control</h2>
+        <label for="node-id">Node ID:</label>
+        <input type="text" id="node-id" name="node-id" required>
+        <label for="node-label">Node Label:</label>
+        <input type="text" id="node-label" name="node-label" required>
+        <button id="add-node-btn">Add Node</button>
+        <button id="edit-node-btn">Edit Node</button>
+      </div>
+      <div id="edge-control" class="control-item">
+        <h2>Edge Control</h2>
+        <label for="source-node-id">Source Node ID:</label>
+        <input type="text" id="source-node-id" name="source-node-id" required>
+        <label for="target-node-id">Target Node ID:</label>
+        <input type="text" id="target-node-id" name="target-node-id" required>
+        <button id="add-edge-btn">Add Edge</button>
+        <button id="edit-edge-btn">Edit Edge</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
