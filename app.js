@@ -99,9 +99,6 @@ async function addEdge(edge) {
 
 fetchDataAndVisualize();
 
-
-//... (existing code)
-
 document.getElementById('add-node-btn').addEventListener('click', async function() {
   const nodeId = document.getElementById('node-id').value;
   const nodeLabel = document.getElementById('node-label').value;
